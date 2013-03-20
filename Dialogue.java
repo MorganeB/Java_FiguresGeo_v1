@@ -25,13 +25,12 @@ public class Dialogue {
 		fenetre.setContentPane(dessin);
 		fenetre.pack();
 		fenetre.setVisible(true);
-		Scanner scan;
-		scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		int rep, rep2, dx, dy, x, y;
 		String rep3;
 		while (true) {
 			System.out.println("Voulez-vous :");
-			System.out.println("   1- fabriquer une figure ?");
+			System.out.println("   1- construire une figure ?");
 			System.out.println("   2- effectuer une operation sur une figure ?");
 			rep=scan.nextInt();
 			if (rep==1) {
@@ -49,9 +48,9 @@ public class Dialogue {
 				case 2:
 					fc=new Triangle();
 					break;
-				/*case 3:
+				case 3:
 					fc=new Cercle();
-					break;*/
+					break;
 				case 4:
 					fc=new Quadrilatere();
 					break;
@@ -67,7 +66,7 @@ public class Dialogue {
 						System.out.println("Voulez-vous effectuer une operation sur la figure actuellement selectionnee (\"oui\", \"non\")");
 						rep3 = scan.next();
 						if (rep3.compareTo("oui") == 0) ok=true;
-					//	else dessin.selectionProchaineFigure();
+							else dessin.selectionProchaineFigure();
 					}
 					System.out.println("\nVoulez-vous :");
 					System.out.println("   1 - translater cette figure ?");

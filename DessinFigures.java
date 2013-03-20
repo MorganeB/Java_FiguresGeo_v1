@@ -73,6 +73,8 @@ public class DessinFigures extends JPanel{
 		else
 			return null;
 	}
+	
+	
 	public int nbFigures(){
 		return nbf;
 	}
@@ -80,17 +82,15 @@ public class DessinFigures extends JPanel{
 	
 	/**
 	 * Cette méthode retourne la figure actuellement sélectionnée
-	 * @param g environnement graphique de dessin
 	 */
-	/*
 	public void selectionProchaineFigure(){
-	if(sel != -1){
-		figures[sel].deSelectionne();
-		sel ++;
-			if(sel == nbf)
-			
-	}*/ 
-	
+		figures[sel ++].deSelectionne();
+		if(sel == nbf)
+			sel = 0;
+		figures[sel].selectionne();
+		repaint();
+	}
+
 	
 	
 }

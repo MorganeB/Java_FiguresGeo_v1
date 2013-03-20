@@ -1,4 +1,4 @@
-import java.awt.Color;
+	import java.awt.Color;
 import java.awt.Graphics;
 
 /**
@@ -58,10 +58,10 @@ public abstract class FigureColoree extends Point{
 	 */
 	public void affiche(Graphics g){	
 		if(selected){
-			g.setColor(Color.RED);
+			g.setColor(Color.magenta);
 			for(int i = 0; i < tab_mem.length; i++){
 				g.fillRect(tab_mem[i].rendreX() -2, tab_mem[i].rendreY() -2, 4, 4);
-				g.setColor(Color.RED);
+				g.setColor(Color.magenta);
 			}
 		}
 	}
