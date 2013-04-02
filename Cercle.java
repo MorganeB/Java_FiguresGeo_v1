@@ -47,10 +47,11 @@ public class Cercle extends ConiqueCentree{
 	 *  @param g objet Graphics 
 	 */
 	public void affiche(Graphics g){
-		g.setColor(Color.black);
+		g.setColor(couleur);
 		g.fillOval(centre.rendreX() - (int)(rayon), centre.rendreY() - (int)(rayon), (int)(rayon * 2), (int)(rayon * 2));
 		super.affiche(g);
 	}
+
 	
 	/**
 	 * Cette méthode modifie le cercle conformément à un ensemble de deux points de saisie.

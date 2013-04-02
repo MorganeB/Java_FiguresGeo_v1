@@ -41,6 +41,9 @@ public class Polygone extends FigureColoree{
 		return 4;
 	}
 	
+	/**
+	 * Cette méthode retourne en résultat le nombre de points de mémorisation (en général) d'un polygone.
+	 */
 	public int nbPoints(){
 		return 4;
 	}

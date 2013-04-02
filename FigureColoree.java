@@ -21,7 +21,7 @@ public abstract class FigureColoree extends Point{
 	/**
 	 * Attribut de type Color donnant la couleur de remplissage.
 	 */
-	private Color couleur;
+	protected Color couleur;
 	
 	/**
 	 * Tableau des points de mémorisation de la figure ( = les points des sommets)
@@ -41,14 +41,30 @@ public abstract class FigureColoree extends Point{
 		couleur = Color.black;
 	}
 	
+	/**
+	 * 
+	 * @return l'attribut couleur de l'objet
+	 */
 	public Color getCouleur(){
 		return couleur;
 	}
 	
+	/**
+	 *  Méthode abstraite 
+	 * @return le nombre de points de mémorisation de la figure 
+	 */
 	public abstract int nbPoints();
 	
+	/**
+	 * Méthode abstraite
+	 * @return le nombre de points de saisie de la figure 
+	 */
 	public abstract int nbClics();
 	
+	/**
+	 *   Méthode abstraite qui permet de modifier les points de mémorisation 
+	 * @param ps les points de saisie
+	 */
 	public abstract void modifierPoints(Point[] ps);
 	
 	
@@ -58,10 +74,10 @@ public abstract class FigureColoree extends Point{
 	 */
 	public void affiche(Graphics g){	
 		if(selected){
-			g.setColor(Color.magenta);
+			//g.setColor(Color.magenta);
 			for(int i = 0; i < tab_mem.length; i++){
 				g.fillRect(tab_mem[i].rendreX() -2, tab_mem[i].rendreY() -2, 4, 4);
-				g.setColor(Color.magenta);
+				g.setColor(couleur);
 			}
 		}
 	}

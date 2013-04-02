@@ -14,13 +14,13 @@ On affiche un JFrame et un menu en console permet d'effectuer les actions suivan
 	- quadrilatère quelconque
 	- Rectangle
 	- Triangle
-	(- Cercle)
+	- Cercle
 	
 - Changer la couleur de l'objet (noir par défaut)
 
 - Effectuer une translation 
 
-( - Modifier la forme et l'emplacement en redéfinissant les points de saisie)
+- Modifier la forme et l'emplacement en redéfinissant les points de saisie
 
 
 ************************************************************************
@@ -41,13 +41,13 @@ A JFrame is displayed and the user can, by interacting with the menu in the cons
 	- polygon 
 	- Rectangle
 	- Triangle
-	(- Cercle) 
+	- Cercle
 
 - Change the color's object 
 
 - Make a translation 
 
-- (Change de shape and its place in the frame by redefining the grasp points)
+- Change the shape and its place in the frame by redefining the grasp points
 
 
  

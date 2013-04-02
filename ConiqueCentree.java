@@ -1,14 +1,27 @@
+/**
+ * la super classe des figures ayant un centre  
+ * @author Morgane
+ *
+ */
+public abstract class ConiqueCentree extends FigureColoree {
 
-public class ConiqueCentree extends FigureColoree {
-
+	/**
+	 * le centre de la figure 
+	 */
 	protected Point centre;
 	
+	/**
+	 * constructeur permettant de créer un cercle
+	 */
 	public ConiqueCentree(){
 		super();
 		centre = new Point((int)(Math.random() * 600), (int)(Math.random() * 600));
 }
 	
-	
+	/**
+	 * methode de retour d'attribut
+	 * @return le centre du cercle
+	 */
 	public Point rendreCentre() {
     	return this.tab_mem[0];
     }

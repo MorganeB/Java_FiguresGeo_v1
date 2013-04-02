@@ -75,6 +75,10 @@ public class DessinFigures extends JPanel{
 	}
 	
 	
+	/**
+	 * Cette méthode retourne le nombre de figures apparaissant dans ce dessin.
+	 * @return entier : le nombre de figures sur le dessin 
+	 */
 	public int nbFigures(){
 		return nbf;
 	}

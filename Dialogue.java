@@ -38,7 +38,8 @@ public class Dialogue {
 				System.out.println("   1 - un rectangle ?");
 				System.out.println("   2 - un triangle ?");
 				System.out.println("   3 - un cercle ?");
-				System.out.println("   4 - un quadrilatere ?");
+				System.out.println("   4 - un carre ?");
+				System.out.println("   5 - un quadrilatère ?");
 				rep2=scan.nextInt();
 				FigureColoree fc = null;
 				switch (rep2) {
@@ -52,9 +53,12 @@ public class Dialogue {
 					fc=new Cercle();
 					break;
 				case 4:
-					fc=new Quadrilatere();
+					fc=new Carre();
 					break;
+				case 5 : fc=new Quadrilatere();
+				break;
 				}
+
 				dessin.ajoute(fc);
 			}
 			if (rep==2) {
